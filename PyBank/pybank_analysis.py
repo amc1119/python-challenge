@@ -10,9 +10,6 @@ analysis_path = "Analysis/final_analysis.txt"
 
 with open(budget_csv, 'r') as budget_file:
 
-    #row_count = sum(1 for row in budget_file)
-    #print(f'There are a total of {row_count} months.')
-
     net_total = 0
     total_months = 0 
     previous_profit = 0
@@ -27,7 +24,6 @@ with open(budget_csv, 'r') as budget_file:
 
     # Read the header row first
     data_header = next(budget_csvreader)
-    # print(f"Budget CSV Header:  {data_header}")
 
     # Read each row of data after the header
     for row in budget_csvreader:
